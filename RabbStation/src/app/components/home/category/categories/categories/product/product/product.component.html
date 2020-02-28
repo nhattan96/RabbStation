@@ -1,0 +1,15 @@
+<div class="flex-container">
+  <mat-card *ngFor="let item of products" class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{item.productName}}</mat-card-title>
+      <mat-card-subtitle *ngIf="item.quantity != 0">Quantity: {{item.quantity}}</mat-card-subtitle>
+      <mat-card-subtitle *ngIf="item.quantity == 0">Out of stock</mat-card-subtitle>
+    </mat-card-header>
+    <div class="product-img-container">
+      <img mat-card-image src="{{item.productImage}}">
+    </div>
+    <mat-card-actions>
+      <button color="primary" mat-button>BUY</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

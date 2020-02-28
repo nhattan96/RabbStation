@@ -1,0 +1,19 @@
+<section id="portfolio">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <div *ngFor="let item of categories" class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="/category/{{item.id}}">
+            <img class="img-fluid" src="{{item.categoryImage}}" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Category
+              </div>
+              <div class="project-name">
+                {{item.categoryName}}
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>

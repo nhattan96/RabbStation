@@ -1,0 +1,23 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .example-card {
+      margin: 5px 5px 5px 5px;
+      width: 320px;
+  }
+.product-img-container {
+    padding: 3px;
+    img {
+        padding: 2px;
+        border: solid 2px #3333336e;
+        border-radius: 5px;
+        height: 233px;
+    }
+}
+
+.mat-card-title {
+    min-height: 65px;
+}
